@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+:root{
+  --nav_width: 80px;
+  --click_anim_time: 15s;
+  --attack_time: 5s;
+  --release_time: 5s; 
+}
+
+body{
+  top:0;
+  bottom:0;
+  height: 100%;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.page-wrapper{
+  position: fixed;
+  overflow: hidden;
+  left: var(--nav_width);
+  right: 0px;
+  top:0px;
+  bottom: 0px;
+  padding:0px;  
+  color:rgb(0, 0, 0);
+}
+
+.title{
+  position: absolute;
+  font-size: 60px;
+  font-family: 'Handjet';
+  left: 10%;
+  z-index:2;
+}
+
+.page{
+  position: fixed;
+  overflow: hidden;
+  left: var(--nav_width);
+  right: 0px;
+  top:0px;
+  bottom: 0px;
+  background-color: #dedede;
+  padding:0px;  
+
+  color:rgb(0, 0, 0);
+
+}
+
+/* nav */
+.nav{
+  position: fixed;
+  display: flex;
+  padding: 0px;
+  left: 0;
+  width: var(--nav_width);
+  height: 100%;
+  background-color: #000000;
+  
+  border-right: dot rgba(255, 255, 255, 0.596) 2px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center
+}
+.nav > button{
+  border: solid rgb(255, 255, 255) 5px;
+}
+
+#nav_home {
+  height: var(--nav_width);
+  width: var(--nav_width);
+  background-repeat: no-repeat;
+  background-image: url(images/button-me-empty.svg);
+  background-size: 100%, 100%;
+  background-position: top;
+  background-color: #ededed;
+  
+  padding: 0px; 
+  flex-shrink: 0;
+}
+#nav_home:hover {
+  background-image: url(images/button-me-hover.svg);
+}
+#nav_home:active {
+  background-image: url(images/button-me-down.svg);
+  
+}
+
+#nav_bo {
+  height: var(--nav_width);
+  width: var(--nav_width);
+  background-repeat: no-repeat;
+  background-image: url(images/bo-original.svg);
+  background-color: #c97fb2;
+  padding: 0px; 
+  flex-shrink: 0;
+  filter:grayscale(.5)
+}
+
+#nav_bo:hover{
+  filter:grayscale(0)
+
+}
+#nav_bo:active{
+  background-color: #ecfb4e;
+  filter:brightness(0.9)
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two-Part Layout with Sidebar</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+		
+		.sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			width: 150px;
+			background-color: #333;
+			color: rgb(37, 25, 25);
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		
+		.main {
+			flex: 1;
+			background-color: #ccc;
+			padding: 20px;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		.button-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			max-width: 600px;
+			margin-top: 20px;
+		}
+		
+		.button {
+			background-color: #fff;
+			color: #333;
+			border: 1px solid #333;
+			padding: 10px 20px;
+			margin: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		
+		.button:hover {
+			background-color: #333;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="sidebar">
+		<h2>Sidebar</h2>
+		<p>This is the sidebar content.</p>
+	</div>
+	
+	<div class="main">
+		<h1>Main Window</h1>
+		<p>This is the main window content.</p>
+		
+		<div class="button-container">
+			<button class="button">Button 1</button>
+			<button class="button">Button 2</button>
+			<button class="button">Button 3</button>
+			<button class="button">Button 4</button>
+			<button class="button">Button 5</button>
+			<button class="button">Button 6</button>
+			<button class="button">Button 7</button>
+			<button class="button">Button 8</button>
+			<button class="button">Button 9</button>
+			<button class="button">Button 10</button>
+		</div>
+	</div>
+</body>
+</html>

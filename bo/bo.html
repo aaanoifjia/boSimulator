@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Bo Simulator by Jiaying Li</title>
+  <link rel='stylesheet' href='style_base.css'/>
+  <link rel='stylesheet' href='bo.css'/>
+</head>
+
+<body>
+  <div class='nav'>
+      <button id="nav_home" onclick = "window.location.href='home.html';"></button>
+      <button id="nav_bo"> </button>
+  </div>
+
+  <div class='page-wrapper'>
+    <h1 class="title hide"  id="switch" onclick="dark_trig()">Bo Simulator</h1>
+    <script src="dark_mode.js"></script>
+    <h1 id="fullscreen" class='hide' onclick="fullscreen_trig()">⤨</h1>
+    <script src="fullscreen.js"></script>
+    <div class='page'>
+      <div class="bo-container">
+        <button id="bo0" type="button" class = "bo"></button>
+        <button id="bo1" type="button" class = "bo"></button>
+        <button id="bo2" type="button" class = "bo"></button>
+        <button id="bo3" type="button" class = "bo"></button>
+        <button id="bo4" type="button" class = "bo"></button>
+        <button id="bo5" type="button" class = "bo"></button>
+        <button id="bo6" type="button" class = "bo"></button>
+        <script src="bo.js"></script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
